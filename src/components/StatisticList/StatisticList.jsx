@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import { Statistic } from "./Statistic";
-import { сheckData } from "./сheckData";
-import css from "./StatisticList.module.css";
+// import { сheckData } from "./сheckData";
+// import css from "./StatisticList.module.css";
 
 
 export const StatisticList = ({ items }) => {
