@@ -12,15 +12,15 @@ export const Profile = (props) => {
       </div>
 
       <ul className={css.stats}>
-        <li>
+        <li className={css.stat}>
           <span className={css.label}>Followers</span>
           <span className={css.quantity}>{props.followers}</span>
         </li>
-        <li>
+        <li className={css.stat}>
           <span className={css.label}>Views</span>
           <span className={css.quantity}>{props.views}</span>
         </li>
-        <li>
+        <li className={css.stat}>
           <span className={css.label}>Likes</span>
           <span className={css.quantity}>{props.likes}</span>
         </li>

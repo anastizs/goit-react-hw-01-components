@@ -1,29 +1,30 @@
 .item {
-    margin: 0;
-    padding: 0;
-    width: 86px;
-    background-color: #908c9a;
-    color: azure;
-    margin: 0;
-    padding: 16px;
-    padding: 8px;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  width: 86px;
+
+  color: azure;
+  margin: 0;
+  padding: 16px;
+  padding: 8px;
+  justify-content: space-between;
 }
 
 .item:not(:last-child) {
-    border-right: 0.5px solid azure;
+  border-right: 0.5px solid azure;
 }
 
 .label {
-    font-family: "Oxygen";
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.6;
+  font-family: "Oxygen";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
 }
 
 .percentage {
-    font-family: "Oxygen";
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 1.6;
+  font-family: "Oxygen";
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.6;
 }
