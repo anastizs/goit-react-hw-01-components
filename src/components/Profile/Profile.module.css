@@ -1,0 +1,96 @@
+.profile {
+  width: 360px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+.description {
+  background-color: #f3f3f3;
+  padding: 32px;
+  text-align: center;
+}
+.avatar {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  width: 120px;
+  border-radius: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.name {
+  font-family: "Oxygen";
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.6;
+  margin-top: 32px;
+  margin-bottom: 16px;
+  color: #10020f;
+}
+
+.tag {
+  font-family: "Oxygen";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.4;
+  margin-top: 0;
+  margin-bottom: 16px;
+  color: #362736;
+}
+.location {
+  font-family: "Oxygen";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.4;
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #362736;
+}
+
+.stats {
+  display: flex;
+  flex-direction: row;
+  background-color: #908c9a;
+  margin: 0;
+  padding: 16px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  justify-content: space-between;
+  border-radius: 0px 0px 4px 4px;
+}
+
+li {
+  display: flex;
+  flex-direction: column;
+  width: 118px;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+li:not(:last-child) {
+  border-right: 0.5px solid #3a393f;
+}
+.label {
+  font-family: "Oxygen";
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.4;
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #362736;
+}
+
+.quantity {
+  font-family: "Oxygen";
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 1.4;
+  color: #10020f;
+}
