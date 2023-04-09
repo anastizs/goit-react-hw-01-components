@@ -1,7 +1,6 @@
 import { Profile } from "components/Profile/Profile";
 import user from "user.json";
-import { StatisticTitle } from "components/StatisticTitle/StatisticTitle";
-import { StatisticList } from "components/StatisticList/StatisticList";
+import { Statistics } from "components/Statistics/Statistics";
 import data from "data.json";
 
 
@@ -31,13 +30,8 @@ export const App = () => {
       />
       </section>
 
-      <section className="statistics">
-        <StatisticTitle text="Upload stats" />
-        <StatisticList
-          items={data}
-          label={data.label}
-          percentage={data.percentage}
-        />
+      <section>
+        <Statistics title="Upload stats" stats={data}/>
       </section>
     </div>
   );
