@@ -1,31 +1,42 @@
 import PropTypes from "prop-types";
-import css from "./Profile.module.css";
+import {
+  Container,
+  Card,
+  Avatar,
+  UserName,
+  UserTag,
+  Location,
+  StatsList,
+  StatsItem,
+  StatsLabel,
+  StatsQuantity,
+} from "./Profile.styled";
 
 export const Profile = (props) => {
   return (
-    <div className={css.profile}>
-      <div className={css.description}>
-        <img src={props.avatar} alt={props.username} className={css.avatar} />
-        <p className={css.name}>{props.username}</p>
-        <p className={css.tag}>@{props.tag}</p>
-        <p className={css.location}>{props.location}</p>
-      </div>
+    <Container>
+      <Card>
+        <Avatar src={props.avatar} alt={props.username} />
+        <UserName>{props.username}</UserName>
+        <UserTag>@{props.tag}</UserTag>
+        <Location>{props.location}</Location>
+      </Card>
 
-      <ul className={css.stats}>
-        <li className={css.stat}>
-          <span className={css.label}>Followers</span>
-          <span className={css.quantity}>{props.followers}</span>
-        </li>
-        <li className={css.stat}>
-          <span className={css.label}>Views</span>
-          <span className={css.quantity}>{props.views}</span>
-        </li>
-        <li className={css.stat}>
-          <span className={css.label}>Likes</span>
-          <span className={css.quantity}>{props.likes}</span>
-        </li>
-      </ul>
-    </div>
+      <StatsList>
+        <StatsItem>
+          <StatsLabel>Followers</StatsLabel>
+          <StatsQuantity>{props.followers}</StatsQuantity>
+        </StatsItem>
+        <StatsItem>
+          <StatsLabel>Views</StatsLabel>
+          <StatsQuantity>{props.views}</StatsQuantity>
+        </StatsItem>
+        <StatsItem>
+          <StatsLabel>Likes</StatsLabel>
+          <StatsQuantity>{props.likes}</StatsQuantity>
+        </StatsItem>
+      </StatsList>
+    </Container>
   );
 };
 
@@ -38,4 +49,3 @@ Profile.propTypes = {
   views: PropTypes.number.isRequired,
   likes: PropTypes.number.isRequired,
 };
-
