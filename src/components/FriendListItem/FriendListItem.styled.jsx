@@ -29,9 +29,9 @@ export const Status = styled.span`
   background-color: ${props => {
   switch (props.statusType) {
       case true:
-        return "red"
+        return "green"
       default:
-      return "green";
+      return "red";
     }
     }
   }};
