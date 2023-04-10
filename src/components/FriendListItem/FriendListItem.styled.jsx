@@ -27,11 +27,12 @@ export const Status = styled.span`
   background-color: red;
 
   background-color: ${props => {
-    switch (props.statusType) {
-      case "true":
-        return "red";
-      case "false":
-            return 'green';
+  switch (props.statusType) {
+      case true:
+        return "red"
+      default:
+      return "green";
+    }
     }
   }};
   outline: 1px solid red;
