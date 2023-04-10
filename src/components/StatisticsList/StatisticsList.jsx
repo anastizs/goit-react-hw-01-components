@@ -14,3 +14,4 @@ StatisticList.propTypes = {
   name: PropTypes.string.isRequired,
   value: PropTypes.number.isRequired,
 };
+

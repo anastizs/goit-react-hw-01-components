@@ -1,14 +1,14 @@
 import styled from "@emotion/styled";
 
 export const Container = styled.div`
-flex-direction: column;
-display: flex;
-width: 360px;
-box-shadow: 12px 12px 12px -4px rgba(0, 0, 0, 0.18);
-border-radius: 4px;
-margin-top: 64px;
-margin-left: auto;
-margin-right: auto;
+  flex-direction: column;
+  display: flex;
+  width: 360px;
+  box-shadow: 12px 12px 12px -4px rgba(0, 0, 0, 0.18);
+  border-radius: 4px;
+  margin-top: 64px;
+  margin-left: auto;
+  margin-right: auto;
 `;
 
 export const Card = styled.div`

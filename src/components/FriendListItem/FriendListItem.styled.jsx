@@ -26,15 +26,14 @@ export const Status = styled.span`
   border-radius: 50px;
   background-color: red;
 
-  background-color: ${props => {
-  switch (props.statusType) {
+  background-color: ${(props) => {
+    switch (props.statusType) {
       case true:
-        return "green"
+        return "green";
       default:
-      return "red";
+        return "red";
     }
-    }
-  }};
+  }}};
   outline: 1px solid red;
 `;
 
