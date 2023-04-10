@@ -24,7 +24,7 @@ export const Status = styled.span`
   width: 10px;
   height: 10px;
   border-radius: 50px;
-//   background-color: red;
+  background-color: red;
 
   background-color: ${props => {
     switch (props.statusType) {
